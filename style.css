@@ -10,62 +10,6 @@ body{
 }
 
 
-
-/* Barra de Progresso */
-.container {
-    color: red;
-    text-align: center;
-    height: 25px;   
-    position: relative;
-}
-.container2 {
-    margin-top: 15vh;
-    color: red;
-    text-align: center;
-    height: 25px;   
-    position: relative;
-}
-.container3 {
-    margin-top: 15vh;
-    color: red;
-    text-align: center;
-    height: 25px;   
-    position: relative;
-}
-.container .progress-bar{
-   position: absolute;
-   height: 100%;
-   background-color: #0fd439;
-   animation: progress-animation 5s forwards;
-}
-@keyframes progress-animation{
-    0% { width: 0%; } 
-    100% { width: 75%}
-}
-/* JS */
-.container2 .progress-bar2{
-    position: absolute;
-    height: 100%;
-    background-color: #0fd439;
-    animation: progress-animation2 5s forwards;
- }
- @keyframes progress-animation2{
-    0% { width: 0%; } 
-    100% { width: 10%}
-}
-/* PHP */
-.container3 .progress-bar3{
-    position: absolute;
-    height: 100%;
-    background-color: #0fd439;
-    animation: progress-animation3 5s forwards;
- }
- @keyframes progress-animation3{
-    0% { width: 0%; } 
-    100% { width: 5%}
-}
-
-
 /* Scroll */
 
 body::-webkit-scrollbar {

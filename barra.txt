@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="progress-bar"></div>
+    </div>
+
+    .container{
+    margin-top: 15vh;
+    color: red;
+    text-align: center;
+    height: 25px;   
+    position: relative;
+}
+.container .progress-bar{
+   position: absolute;
+   height: 100%;
+   background-color: #0fd439;
+   animation: progress-animation 5s forwards;
+}
+@keyframes progress-animation{
+    0% { width: 0%; } 
+    100% { width: 75%}
+}
