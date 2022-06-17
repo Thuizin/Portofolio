@@ -1,0 +1,83 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+}
+
+body{
+    height: 1000px;
+    background-image: linear-gradient(-45deg, #201b2c, #211341, #1b015f);
+    background-attachment: fixed;
+}
+
+
+
+/* Barra de Progresso */
+.container {
+    color: red;
+    text-align: center;
+    height: 25px;   
+    position: relative;
+}
+.container2 {
+    margin-top: 15vh;
+    color: red;
+    text-align: center;
+    height: 25px;   
+    position: relative;
+}
+.container3 {
+    margin-top: 15vh;
+    color: red;
+    text-align: center;
+    height: 25px;   
+    position: relative;
+}
+.container .progress-bar{
+   position: absolute;
+   height: 100%;
+   background-color: #0fd439;
+   animation: progress-animation 5s forwards;
+}
+@keyframes progress-animation{
+    0% { width: 0%; } 
+    100% { width: 75%}
+}
+/* JS */
+.container2 .progress-bar2{
+    position: absolute;
+    height: 100%;
+    background-color: #0fd439;
+    animation: progress-animation2 5s forwards;
+ }
+ @keyframes progress-animation2{
+    0% { width: 0%; } 
+    100% { width: 10%}
+}
+/* PHP */
+.container3 .progress-bar3{
+    position: absolute;
+    height: 100%;
+    background-color: #0fd439;
+    animation: progress-animation3 5s forwards;
+ }
+ @keyframes progress-animation3{
+    0% { width: 0%; } 
+    100% { width: 5%}
+}
+
+
+/* Scroll */
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1b015f;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #201b2c;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #1b015f;  /* creates padding around scroll thumb */
+  }
